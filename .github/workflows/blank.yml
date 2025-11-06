@@ -23,9 +23,9 @@ jobs:
       - name: Deploy to Vercel (Production)
         if: github.event_name == 'push'
         env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_TOKEN: VdfQ6eEN5a5Pc4kTNbiA2MPN
+          VERCEL_ORG_ID: team_TklNTPZRqUPOxXEqJ6ZGASjI
+          VERCEL_PROJECT_ID: prj_PX2VAOzkkoCLEgF0KhE8dZ8ovKlX
         run: |
           npm install --global vercel
           vercel pull --yes --environment=production --token=$VERCEL_TOKEN
